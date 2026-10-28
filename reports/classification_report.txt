@@ -1,0 +1,36 @@
+================================================================================
+SKIN CANCER CLASSIFICATION REPORT (CNN-SVM MODEL ON TEST SET)
+================================================================================
+
+                            precision    recall  f1-score   support
+
+     Melanocytic Nevi (nv)     0.8946    0.7640    0.8242      1000
+            Melanoma (mel)     0.3726    0.5833    0.4548       168
+    Benign Keratosis (bkl)     0.3605    0.3949    0.3769       157
+Basal Cell Carcinoma (bcc)     0.3119    0.4416    0.3656        77
+ Actinic Keratoses (akiec)     0.2976    0.4902    0.3704        51
+   Vascular Lesions (vasc)     0.8000    0.3636    0.5000        22
+       Dermatofibroma (df)     0.2000    0.0455    0.0741        22
+
+                  accuracy                         0.6627      1497
+                 macro avg     0.4625    0.4404    0.4237      1497
+              weighted avg     0.7181    0.6627    0.6810      1497
+
+
+================================================================================
+CNN-ONLY BASELINE CLASSIFICATION REPORT
+================================================================================
+
+                            precision    recall  f1-score   support
+
+     Melanocytic Nevi (nv)     0.8279    0.8180    0.8229      1000
+            Melanoma (mel)     0.4727    0.3095    0.3741       168
+    Benign Keratosis (bkl)     0.2330    0.3057    0.2645       157
+Basal Cell Carcinoma (bcc)     0.2162    0.2078    0.2119        77
+ Actinic Keratoses (akiec)     0.2069    0.1176    0.1500        51
+   Vascular Lesions (vasc)     0.1772    0.6364    0.2772        22
+       Dermatofibroma (df)     0.0909    0.0455    0.0606        22
+
+                  accuracy                         0.6379      1497
+                 macro avg     0.3178    0.3486    0.3088      1497
+              weighted avg     0.6527    0.6379    0.6404      1497

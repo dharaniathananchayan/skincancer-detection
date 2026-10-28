@@ -1,0 +1,36 @@
+{
+    "svm_model": {
+        "accuracy": 0.6626586506346025,
+        "balanced_accuracy": 0.44044046014468324,
+        "precision_weighted": 0.7181057360739383,
+        "recall_weighted": 0.6626586506346025,
+        "f1_weighted": 0.6809654977644317,
+        "precision_macro": 0.4624639895264807,
+        "recall_macro": 0.44044046014468324,
+        "f1_macro": 0.4236936983782882,
+        "roc_auc_macro": 0.8766466121758654,
+        "roc_auc_weighted": 0.8791342446118435
+    },
+    "cnn_baseline": {
+        "accuracy": 0.6379425517702071,
+        "balanced_accuracy": 0.34864482029059446,
+        "precision_weighted": 0.65266201451295,
+        "recall_weighted": 0.6379425517702071,
+        "f1_weighted": 0.6404191261215009,
+        "precision_macro": 0.31784417898000916,
+        "recall_macro": 0.34864482029059446,
+        "f1_macro": 0.30875078118228644,
+        "roc_auc_macro": 0.8106820068736834,
+        "roc_auc_weighted": 0.8135289682788951
+    },
+    "test_sample_count": 1497,
+    "class_mapping": {
+        "nv": 0,
+        "mel": 1,
+        "bkl": 2,
+        "bcc": 3,
+        "akiec": 4,
+        "vasc": 5,
+        "df": 6
+    }
+}

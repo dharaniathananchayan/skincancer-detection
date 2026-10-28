@@ -1,0 +1,52 @@
+{
+    "class_names": {
+        "nv": "Melanocytic Nevi",
+        "mel": "Melanoma",
+        "bkl": "Benign Keratosis",
+        "bcc": "Basal Cell Carcinoma",
+        "akiec": "Actinic Keratoses",
+        "vasc": "Vascular Lesions",
+        "df": "Dermatofibroma"
+    },
+    "class_to_idx": {
+        "nv": 0,
+        "mel": 1,
+        "bkl": 2,
+        "bcc": 3,
+        "akiec": 4,
+        "vasc": 5,
+        "df": 6
+    },
+    "idx_to_class": {
+        "0": "nv",
+        "1": "mel",
+        "2": "bkl",
+        "3": "bcc",
+        "4": "akiec",
+        "5": "vasc",
+        "6": "df"
+    },
+    "idx_to_name": {
+        "0": "Melanocytic Nevi",
+        "1": "Melanoma",
+        "2": "Benign Keratosis",
+        "3": "Basal Cell Carcinoma",
+        "4": "Actinic Keratoses",
+        "5": "Vascular Lesions",
+        "6": "Dermatofibroma"
+    },
+    "severity_mapping": {
+        "nv": "Benign",
+        "mel": "Malignant",
+        "bkl": "Benign",
+        "bcc": "Malignant",
+        "akiec": "Pre-cancerous / Malignant",
+        "vasc": "Benign",
+        "df": "Benign"
+    },
+    "image_shape": [
+        128,
+        128,
+        3
+    ]
+}

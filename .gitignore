@@ -1,0 +1,52 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# Large dataset files & images
+HAM10000_images_part_1/
+HAM10000_images_part_2/
+hmnist_*.csv
+dataset/raw/*.jpg
+dataset/processed/*.npz
+dataset/processed/*.npy
+dataset/processed/images/
+models/*.npz
+
+# System and logs
+.DS_Store
+Thumbs.db
+*.log
+.idea/
+.vscode/

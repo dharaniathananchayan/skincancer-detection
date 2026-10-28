@@ -1,0 +1,37 @@
+{
+    "dataset_name": "HAM10000 (Human Against Machine with 10000 training images)",
+    "total_images": 10015,
+    "total_unique_lesions": 7470,
+    "image_formats": "JPEG (24-bit RGB)",
+    "standard_resized_resolution": [
+        128,
+        128,
+        3
+    ],
+    "class_counts": {
+        "nv": 6705,
+        "mel": 1113,
+        "bkl": 1099,
+        "bcc": 514,
+        "akiec": 327,
+        "vasc": 142,
+        "df": 115
+    },
+    "class_full_names": {
+        "nv": "Melanocytic Nevi",
+        "mel": "Melanoma",
+        "bkl": "Benign Keratosis",
+        "bcc": "Basal Cell Carcinoma",
+        "akiec": "Actinic Keratoses",
+        "vasc": "Vascular Lesions",
+        "df": "Dermatofibroma"
+    },
+    "imbalance_ratio_max_to_min": 58.30434782608695,
+    "demographics": {
+        "mean_age": 51.863828077927295,
+        "median_age": 50.0,
+        "male_count": 5406,
+        "female_count": 4552,
+        "unknown_gender": 57
+    }
+}

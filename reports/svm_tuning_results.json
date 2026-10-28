@@ -1,0 +1,26 @@
+[
+    {
+        "C": 0.1,
+        "kernel": "rbf",
+        "val_balanced_accuracy": 0.444616274189038,
+        "val_weighted_f1": 0.58949684383173
+    },
+    {
+        "C": 1.0,
+        "kernel": "rbf",
+        "val_balanced_accuracy": 0.4610119321646589,
+        "val_weighted_f1": 0.6970292684594376
+    },
+    {
+        "C": 5.0,
+        "kernel": "rbf",
+        "val_balanced_accuracy": 0.3954467377045633,
+        "val_weighted_f1": 0.7145238219062194
+    },
+    {
+        "C": 10.0,
+        "kernel": "rbf",
+        "val_balanced_accuracy": 0.3778865916572388,
+        "val_weighted_f1": 0.708319962286736
+    }
+]
