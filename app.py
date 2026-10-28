@@ -178,15 +178,36 @@ def main():
                             st.error(f"Invalid or corrupt image file: {e}")
             else:
                 sample_options = {
-                    "Sample Melanoma (Malignant mel)": "HAM10000_images_part_1/ISIC_0024306.jpg",
-                    "Sample Basal Cell Carcinoma (Malignant bcc)": "HAM10000_images_part_1/ISIC_0024331.jpg",
-                    "Sample Melanocytic Nevi (Benign mole nv)": "HAM10000_images_part_1/ISIC_0024310.jpg",
-                    "Sample Benign Keratosis (Benign bkl)": "HAM10000_images_part_1/ISIC_0024312.jpg"
+                    "Sample Melanoma (Malignant mel)": [
+                        "dataset/raw/HAM10000_images_part_1/ISIC_0024306.jpg",
+                        "HAM10000_images_part_1/ISIC_0024306.jpg"
+                    ],
+                    "Sample Basal Cell Carcinoma (Malignant bcc)": [
+                        "dataset/raw/HAM10000_images_part_1/ISIC_0024331.jpg",
+                        "HAM10000_images_part_1/ISIC_0024331.jpg"
+                    ],
+                    "Sample Melanocytic Nevi (Benign mole nv)": [
+                        "dataset/raw/HAM10000_images_part_1/ISIC_0024310.jpg",
+                        "HAM10000_images_part_1/ISIC_0024310.jpg"
+                    ],
+                    "Sample Benign Keratosis (Benign bkl)": [
+                        "dataset/raw/HAM10000_images_part_1/ISIC_0024312.jpg",
+                        "HAM10000_images_part_1/ISIC_0024312.jpg"
+                    ]
                 }
-                valid_samples = {k: v for k, v in sample_options.items() if os.path.exists(v)}
+                valid_samples = {}
+                for name, paths in sample_options.items():
+                    for p in paths:
+                        if os.path.exists(p):
+                            valid_samples[name] = p
+                            break
+
                 if not valid_samples:
                     import glob
-                    found = glob.glob("HAM10000_images_part_1/*.jpg")[:4]
+                    found = (
+                        glob.glob("dataset/raw/HAM10000_images_part_1/*.jpg") +
+                        glob.glob("HAM10000_images_part_1/*.jpg")
+                    )[:4]
                     valid_samples = {f"Test Sample #{i+1}": p for i, p in enumerate(found)}
 
                 selected_sample = st.selectbox("Select Benchmark Case:", list(valid_samples.keys()))
