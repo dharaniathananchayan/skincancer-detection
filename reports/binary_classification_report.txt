@@ -1,0 +1,15 @@
+DEDICATED BINARY CANCER SCREENING REPORT (CNN-SVM)
+============================================================
+
+              precision    recall  f1-score   support
+
+      Benign     0.8593    0.9659    0.9094      1201
+   Malignant     0.7211    0.3581    0.4786       296
+
+    accuracy                         0.8457      1497
+   macro avg     0.7902    0.6620    0.6940      1497
+weighted avg     0.8319    0.8457    0.8242      1497
+
+============================================================
+High-Confidence Accuracy (Threshold >= 0.85): 94.17%
+Cohort Coverage: 65.3%

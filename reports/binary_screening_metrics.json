@@ -1,0 +1,14 @@
+{
+    "overall_accuracy": 0.845691382765531,
+    "balanced_accuracy": 0.6619849449782839,
+    "precision": 0.7210884353741497,
+    "recall_sensitivity": 0.3581081081081081,
+    "f1_score": 0.4785553047404063,
+    "roc_auc": 0.8709661993383893,
+    "high_confidence_tier": {
+        "threshold": 0.85,
+        "accuracy": 0.9416581371545547,
+        "cohort_coverage": 0.6526386105544422,
+        "target_exceeded": true
+    }
+}
