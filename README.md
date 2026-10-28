@@ -82,6 +82,7 @@ skincancer/
 │       └── classes_info.json
 │
 ├── notebooks/
+│   ├── 00_complete_eda.ipynb
 │   ├── 01_dataset_exploration.ipynb
 │   ├── 02_image_preprocessing.ipynb
 │   ├── 03_cnn_svm_training.ipynb
